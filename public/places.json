@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Cox's Bazar Beach",
+        "img": "https://i.ibb.co/2hmXwyg/coxbazar-sq-1-png.jpg",
+        "description": "Cox's Bazar, the most attractive tourist spots for Bangladesh and not only for Bangladesh it's the longest sea beach in the world .Seventy-five miles (120 Kilo miters sandy sea beach with a gentle slop).and it's the the tourist capital of Bangladesh.visit beach is the main reason which is shark free and good for bathing, swiming & sun-bathing. Lot's of local tourist & foreign tourist come Cox's Bazar to spend their leisure in Cox's Bazaar.",
+        "cost1": 195000,
+        "cost2": 45000,
+        "cost3": 16000,
+        "customer": 679,
+        "rating": 4.5,
+        "durationa": 3
+    },
+    {
+        "name": "St. Martin's Island",
+        "img": "https://i.ibb.co/kK1JtMz/sentmartin-sq-1-png.jpg",
+        "description": "St. Martin's Island is a small island in the northeastern part of the Bay of Bengal, about 9 km south of the tip of the Cox's Bazar-Teknaf peninsula, and forming the southernmost part of Bangladesh. There is a small adjoining island that is separated at high tide, called Chera Dwip.",
+        "cost1": 155000,
+        "cost2": 95000,
+        "cost3": 22000,
+        "customer": 357,
+        "rating": 4.7,
+        "durationa": 3
+    },
+    {
+        "name": "Patenga Sea Beach",
+        "img": "https://i.ibb.co/m9218jN/Patenga-sq-1.jpg",
+        "description": "Patenga is a sea beach of the Bay of Bengal, located 14 kilometres south from the port city of Chattogram, Bangladesh. It is near to the mouth of the Karnaphuli River. The beach is very close to the Bangladesh Naval Academy of the Bangladesh Navy and Shah Amanat International Airport.",
+        "cost1": 47000,
+        "cost2": 23300,
+        "cost3": 12500,
+        "customer": 1250,
+        "rating": 4.3,
+        "durationa": 2
+    },
+    {
+        "name": "Bandarban Hills Station",
+        "img": "https://i.ibb.co/mXb9QRB/banderban-sq-1-png.jpg",
+        "description": "Bandarban Hill District is the most remote and least populated district in Bangladesh. The lure of the tallest peaks of Bangladesh, treks through virgin forests and chance to meet more than 15 tribes of the region up close is growing both among Bangladeshis and tourists from other countries. Since the insurgency ceased in the Chittagong Hill Tracts (a cluster that includes all three hill districts of Bangladesh) it has opened up for tourists more than a decade back, though some of the western tourist guides may still describe the area as a major security risk.",
+        "cost1": 87300,
+        "cost2": 57600,
+        "cost3": 23800,
+        "customer": 467,
+        "rating": 4.5,
+        "durationa": 4
+    },
+    {
+        "name": "Sylhet",
+        "img": "https://i.ibb.co/0Zym1vm/khagrachori-sq-1-png.jpg",
+        "description": "The most important town in the Surma River valley, it is connected by road and rail with Comilla, Chhatak, and Habiganj, by road with the states of Assam and Meghalaya (both in India), and by air with Dhaka and several international destinations. Sylhet is known for its cane products and produces tea, fertilizer, and liquefied petroleum (propane) gas. There are also several handicraft cottage industries, including mat weaving and bamboo work. Tea estates southeast of Sylhet provide most of Bangladesh’s yield.",
+        "cost1": 67400,
+        "cost2": 35300,
+        "cost3": 17400,
+        "customer": 730,
+        "rating": 4.3,
+        "durationa": 2
+    },
+    {
+        "name": "Sajek Valley",
+        "img": "https://i.ibb.co/8KhjTvt/sajek-squre-1-png.jpg",
+        "description": "Sajek valley is 2000 feet above sea level. Sajek valley is known as the Queen of Hills & Roof of Rangamati. The name of Sajek Valley came from Sajek River that originates from Karnafuli river. Sajek river is working as a border between Bangladesh and India. Sajek valley resorts are made on the side of the hill to provide the unique experience of tribal lifestyle.Sajek valley is famous for its natural beauty. The valley is surrounded by mountains, dense forest, grasslands hilly tracks. Many small rivers flow through the mountains among which Kachalong and Machalong are notable. On the way to Sajek valley, one has to cross the Mayni range and Mayni river.",
+        "cost1": 77300,
+        "cost2": 35040,
+        "cost3": 16500,
+        "customer": 2250,
+        "rating": 4.8,
+        "durationa": 2
+    }
+]
