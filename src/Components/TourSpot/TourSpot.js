@@ -27,8 +27,9 @@ const TourSpot = () => {
         </div>
         <div className="col shadow-lg d-flex justify-content-center align-items-center">
          <div className="text-start">
-         <h3> <span className="fw-bolder">From</span>$ {cost3}</h3>
-         <p className="text-info">Lowest Price Guarantee</p>
+             <h2 className="fw-bold">{name}</h2>
+         <h4> <span className="fw-bolder">From</span>$ {cost3}</h4>
+         <p className="text-info text-decoration-underline">Lowest Price Guarantee</p>
         <input className="w-100 py-2 px-5 mb-3 rounded shadow text-danger" type="date" value="2021-11-01" placeholder=""/><br />
         <input className="w-100 py-2 mb-3 px-5 rounded shadow text-danger" placeholder="Number of travelers" type="number"/> <br />
 
@@ -46,7 +47,17 @@ const TourSpot = () => {
                  <h3>Overview</h3>
                  <p>{description}</p>
              </div>
+            </div>
 
+            <div className="">
+                <div className="">
+                    <p className="fs-1 fw-bold">Rating</p>
+                    
+                </div>
+
+                <div className="">
+                    <img className="img-fulid" src="https://i.ibb.co/PYw4Vxb/Screenshot-2021-10-31-174454.png" alt="" />
+                </div>
             </div>
 
 

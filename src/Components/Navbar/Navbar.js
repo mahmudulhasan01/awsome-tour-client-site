@@ -7,22 +7,22 @@ import useAuth from '../../hooks/useAuth';
 const Navbar = () => {
   const {user, logOut} = useAuth();
     return (
-        <div>
+        <div className="fixed-top">
              <div className="d-flex py-3 justify-content-around bg-dark">
         <div className="">
           <h3 className="text-light fw-bold">Awsome Tour</h3>
         </div>
         <div className="">
           <Link className="text-decoration-none pe-2 text-light btn btn-outline-success me-1" to="/home">Home</Link>
-          <Link className="text-decoration-none pe-2 text-danger fw-bold btn btn-outline-success me-1" to="/admin">Admin</Link>
-
-        {user?.email && <Link className="text-decoration-none pe-2 text-light btn btn-outline-success me-1" to="/menageorder">Manage Order</Link>}
 
           {user?.email ?
             <Link className="text-decoration-none pe-2 text-light btn btn-outline-success me-1" to={`/mybooking`}>My Booking</Link>
             :
             <NavHashLink className="text-decoration-none pe-2 text-light btn btn-outline-success me-1" to="#about">About us</NavHashLink>
           }
+          <Link className="text-decoration-none pe-2 text-danger fw-bold btn btn-outline-success me-1" to="/admin">Add A New Pleace</Link>
+
+        {user?.email && <Link className="text-decoration-none  pe-2 text-light btn btn-outline-success me-1" to="/menageorder">Manage All Booking</Link>}
           
           
           {user?.email?

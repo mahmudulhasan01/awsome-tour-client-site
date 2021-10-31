@@ -1,26 +1,26 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import { Link, useLocation, useHistory } from 'react-router-dom';
+import { useLocation, useHistory} from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
+    const {singInUseingGoogle, singInUseingGithub, error} = useAuth();
     const { register, handleSubmit } = useForm();
     const onSubmit = data => console.log(data);
 
-    const {singInUseingGoogle, singInUseingGithub, error} = useAuth();
-
     const location = useLocation();
-    const history = useHistory()
+    const hisory = useHistory();
     const redirect_uri = location.state?.from || '/home'
 
-    // const handeleGoogleLogin = () => {
-    //   singInUseingGoogle()
-    //   .then(result=>{
-        
-    //     history.push(redirect_uri)
-    // })
+    const handleGoogleLogin = () =>{
+        singInUseingGoogle()
+        .then(result=>{
+            hisory.push(redirect_uri)
+        })
+    }
 
-    // }
+
+
     return (
         <div className="">
            <h4 className="fw-bold text-center mt-5">Login With Email</h4>
@@ -41,7 +41,7 @@ const Login = () => {
          </form>      
          <br /><br /><br />                                                               
 
-   <button onClick={singInUseingGoogle} className="bg-dark rounded p-1 px-3 me-4 btn"><i className="fab fa-google text-warning fs-3"></i></button>
+   <button onClick={handleGoogleLogin} className="bg-dark rounded p-1 px-3 me-4 btn"><i className="fab fa-google text-warning fs-3"></i></button>
 
 <button onClick={singInUseingGithub} className="bg-dark rounded p-1 px-3 me-4 btn"><i className="fab fa-github-square text-warning fs-3"></i></button>
 

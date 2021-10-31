@@ -34,9 +34,9 @@ function App() {
           <PraivateRoute path="/mybooking">
             <MyBooking></MyBooking>
           </PraivateRoute>
-          <Route path="/admin">
+          <PraivateRoute path="/admin">
             <Admin></Admin>
-          </Route>
+          </PraivateRoute>
           <PraivateRoute path="/menageorder">
             <MenageOrder></MenageOrder>
           </PraivateRoute>

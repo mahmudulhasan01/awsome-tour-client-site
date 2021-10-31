@@ -13,7 +13,7 @@ const TopDestinations = () => {
     return (
         <div className="container">
             <h2 className="text-center fw-bold mt-4 ">Top Destinations</h2>
-           <div className=" d-flex justify-content-center d-flex align-items-center row">
+           <div className="d-flex justify-content-center d-flex align-items-center row">
            {
                 destinations.map(destination=> <Destination
                 key={destination._id}

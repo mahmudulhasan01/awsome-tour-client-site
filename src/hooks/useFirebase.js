@@ -19,13 +19,11 @@ const useFirebase = () =>{
     const singInUseingGoogle = ()=>{
       setIsLoading(true);
 
-        signInWithPopup(auth, googleProvider)
-        .then(result=>{
-            console.log(result.user);
-            setUser(result.user);
-        })
+        return signInWithPopup(auth, googleProvider)
+        
         .finally(() => setIsLoading(false));
-    }
+    };
+
 
      const singInUseingGithub = () =>{
           signInWithPopup(auth, gitHubProvider)
@@ -61,6 +59,7 @@ const useFirebase = () =>{
     return{
         user,
         error,
+        isLoading,
         singInUseingGoogle,
         singInUseingGithub,
         logOut
