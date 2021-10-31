@@ -12,13 +12,13 @@ const TourSpot = () => {
     const {name, _id, img, description, cost1, cost2, cost3, customer,rating, durationa} = tourSpot;
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/places/${id}`)
+        fetch(`https://awsome-tour-server.herokuapp.com/places/${id}`)
         .then(res => res.json())
         .then(data => setTourSpot(data))
     },[id]);
 
     const handleAddToMyOrder = tourSpot =>{
-        axios.post('http://localhost:5000/orders', tourSpot)
+        axios.post('https://awsome-tour-server.herokuapp.com/orders', tourSpot)
          .then(res => {
              console.log(res)
              if(res.data.insertedId){

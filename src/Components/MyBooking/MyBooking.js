@@ -6,7 +6,7 @@ const MyBooking = () => {
     console.log(orders)
 
     useEffect(()=>{
-        fetch('http://localhost:5000/orders')
+        fetch('https://awsome-tour-server.herokuapp.com/orders')
         .then(res => res.json())
         .then(data => setOrders(data))
     },[]);
@@ -14,7 +14,7 @@ const MyBooking = () => {
     const handleDelete = id => {
         const remainingBooks = deleteBooking.filter(items => items._id !== id);
 
-        fetch(`http://localhost:5000/orders/${id}`, {
+        fetch(`https://awsome-tour-server.herokuapp.com/orders/${id}`, {
             method: "DELETE",
         })
             .then(res => {
