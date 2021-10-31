@@ -55,7 +55,7 @@ const TourSpot = () => {
 
          <div className="d-flex justify-content-start align-items-center container">
                 
-            <div className="w-50">
+            <div className="w-50 ms-5">
                  <h3>Overview</h3>
                  <p>{description}</p>
              </div>

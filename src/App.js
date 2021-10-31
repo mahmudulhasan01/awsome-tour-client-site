@@ -8,6 +8,7 @@ import Login from './Components/Login/Login';
 import MenageOrder from './Components/MenageOrder/MenageOrder';
 import MyBooking from './Components/MyBooking/MyBooking';
 import Navbar from './Components/Navbar/Navbar';
+import Notfound from './Components/NotFound/Notfound';
 import PraivateRoute from './Components/PraivateRoute/PraivateRoute';
 import TourSpot from './Components/TourSpot/TourSpot';
 import AuthProvider from './Context/AuthProvider';
@@ -40,6 +41,9 @@ function App() {
           <PraivateRoute path="/menageorder">
             <MenageOrder></MenageOrder>
           </PraivateRoute>
+          <Route exact path='*'>
+            <Notfound></Notfound>
+          </Route>
         </Switch>
         <Footer></Footer>
       </BrowserRouter>
