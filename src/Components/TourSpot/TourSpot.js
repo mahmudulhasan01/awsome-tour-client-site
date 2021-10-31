@@ -11,7 +11,7 @@ const TourSpot = () => {
     const {name, img, description, cost1, cost2, cost3, customer,rating, durationa} = tourSpot;
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/places/${id}`)
+        fetch(`https://awsome-tour-server.herokuapp.com/places/${id}`)
         .then(res => res.json())
         .then(data => setTourSpot(data))
     },[id]);
