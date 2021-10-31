@@ -1,6 +1,6 @@
 # Getting Started with Awsome Tour Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Awsome Tour](https://awesome-tour.web.app).
 
 ## Information About Awsome Tour Website:
 * 1. The arrangement of the illusion in any tourist center is to sit at home.
