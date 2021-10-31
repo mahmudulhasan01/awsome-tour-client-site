@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -8,13 +9,24 @@ const TourSpot = () => {
 
     // console.log(tourSpot)
 
-    const {name, img, description, cost1, cost2, cost3, customer,rating, durationa} = tourSpot;
+    const {name, _id, img, description, cost1, cost2, cost3, customer,rating, durationa} = tourSpot;
 
     useEffect(()=>{
-        fetch(`https://awsome-tour-server.herokuapp.com/places/${id}`)
+        fetch(`http://localhost:5000/places/${id}`)
         .then(res => res.json())
         .then(data => setTourSpot(data))
     },[id]);
+
+    const handleAddToMyOrder = tourSpot =>{
+        axios.post('http://localhost:5000/orders', tourSpot)
+         .then(res => {
+             console.log(res)
+             if(res.data.insertedId){
+                alert('A place is Added Successfully.');
+             }
+         })
+    }
+    
 
 
 
@@ -34,7 +46,7 @@ const TourSpot = () => {
         <input className="w-100 py-2 mb-3 px-5 rounded shadow text-danger" placeholder="Number of travelers" type="number"/> <br />
 
         <Link to ='/mybooking'>
-        <button className="btn btn-danger mb-3 btn-lg w-100 text-light fw-bold">Book Now</button>
+        <button onClick={()=>handleAddToMyOrder(tourSpot)} className="btn btn-danger mb-3 btn-lg w-100 text-light fw-bold">Book Now</button>
         </Link>
          </div>
          </div>

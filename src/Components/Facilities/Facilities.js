@@ -5,7 +5,7 @@ const Facilities = () => {
     // console.log(facilities)
 
     useEffect(()=>{
-        fetch('https://awsome-tour-server.herokuapp.com/facilities')
+        fetch('http://localhost:5000/facilities')
         .then(res => res.json())
         .then(data => setFacilities(data))
     },[]);

@@ -10,7 +10,7 @@ const Admin = () => {
 
     const onSubmit = data =>{
          console.log(data)
-         axios.post('https://awsome-tour-server.herokuapp.com/places', data)
+         axios.post('http://localhost:5000/places', data)
          .then(res => {
              console.log(res)
              if(res.data.insertedId){

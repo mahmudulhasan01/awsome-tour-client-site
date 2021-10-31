@@ -6,7 +6,7 @@ const TopDestinations = () => {
     const [destinations, setDestinations] = useState([]);
 
     useEffect(()=>{
-        fetch('https://awsome-tour-server.herokuapp.com/places')
+        fetch('http://localhost:5000/places')
         .then(res => res.json())
         .then(data => setDestinations(data));
     },[])
